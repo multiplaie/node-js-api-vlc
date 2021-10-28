@@ -1,0 +1,9 @@
+{
+    "app":{
+        "port": 5501
+    },
+    "vlc": {
+        "port": 8080,
+        "password": "pwd"
+    }
+}
