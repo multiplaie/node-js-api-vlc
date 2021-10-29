@@ -4,7 +4,7 @@ const VLC = require('node-vlc-json');
 const player = new VLC({httpPort: '8080', httpPassword: 'pwd'});
 
 router.get('/play', (req, res) => {
-
+  res.set('Access-Control-Allow-Origin', '*');
     player.play(req.query.path, function() {
         player.status(function(res) {
           console.log(res.state);
